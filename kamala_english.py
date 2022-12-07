@@ -254,11 +254,10 @@ def kamala_reply(text):
 # execution of voice assistant
 def execution():
     wishMe()
-    # kamala_talk('i am your personal voice assistant. when you need me just call me with my name kamala')
+    kamala_talk('i am your personal voice assistant. when you need me just call me with my name kamala')
     while True:
         listen_kamala = kamala_listen()
         print(listen_kamala)
         kamala_reply(listen_kamala)
         if 'kamala stop' in listen_kamala:
             break
-execution()
